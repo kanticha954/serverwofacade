@@ -8,7 +8,10 @@ package serverwofacade;
 public class ServerWOFacade {
     public static void main(String[] args) {
         ScheduleServer scheduleServer = new ScheduleServer();
-	scheduleServer.startBooting();
+        scheduleServer.start("Start working......");
+        scheduleServer.stop("After work done.........");
+	
+        /*scheduleServer.startBooting();
 	scheduleServer.readSystemConfigFile();
 	scheduleServer.init();
 	scheduleServer.initializeContext();
@@ -21,7 +24,7 @@ public class ServerWOFacade {
 	scheduleServer.destroySystemObjects();
 	scheduleServer.destoryListeners();
 	scheduleServer.destoryContext();
-	scheduleServer.shutdown();
+	scheduleServer.shutdown();*/
     }
     
 }

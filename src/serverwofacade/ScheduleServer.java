@@ -11,6 +11,36 @@ package serverwofacade;
  * @author sarun
  */
 public class ScheduleServer {
+    
+    public void start(String str){
+        System.out.println(str); //starting
+        System.out.println("Starts booting...");
+        System.out.println("Reading system config files...");
+        System.out.println("Initializing...");
+        System.out.println("Initializing context...");
+        System.out.println("Initializing listeners...");
+        System.out.println("Creating system objects...");
+        System.out.println("Releasing processes...");
+        System.out.println("Destorying...");
+        System.out.println("Destroying system objects...");
+        System.out.println("Destroying listeners...");
+        System.out.println("Destroying context...");
+        System.out.println("Shutting down...");
+        
+    }
+    
+    public void stop(String stop){
+        
+        System.out.println("Releasing processes...");
+        System.out.println("Destorying...");
+        System.out.println("Destroying system objects...");
+        System.out.println("Destroying listeners...");
+        System.out.println("Destroying context...");
+        System.out.println("Shutting down...");
+        
+    }
+    
+    /*
     public void startBooting(){
 	System.out.println("Starts booting...");
     }
@@ -46,5 +76,5 @@ public class ScheduleServer {
     }
     public void shutdown(){
         System.out.println("Shutting down...");
-    }
+    }*/
 }
